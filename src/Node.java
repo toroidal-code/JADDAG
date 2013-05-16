@@ -16,6 +16,10 @@ public class Node implements Comparable<Node>{
         this.finite = false;
     }
 
+    public Collection<Character> getKeys(){
+        return children.keySet();
+    }
+
     /**
      * Get our child nodes from our Map
      * @return Some collection of child nodes, or null if empty;
